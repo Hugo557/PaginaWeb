@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tareas</h1>
+    <div class="buttons">
+        <button onclick="window.location.href = 'Practicas.html';">Practicas</button>
+        <button onclick="window.location.href = 'index.html';">Menu</button>
+      </div>
+  </header>
+<div class="container">
+    <div class="box" onclick="window.location.href = 'Practicas y Tareas/Procesadores Intel y AMD.pdf';">
+        <img src= "Practicas y Tareas/Practica1.jpeg" alt="Imagen 1">
+        <div class="content">
+            <p>Tarea 1</p>
+        </div>
+    </div>
+     <div class="box" onclick="window.location.href = 'Practicas y Tareas/Gamas de equipo de computo.pdf';">
+      <img src="Practicas y Tareas/Practica2.avif" alt="Imagen 2">
+      <div class="content">
+        <p>Tarea 2</p>
+      </div>
+    </div>
+	
+	<div class="box" onclick="window.location.href = 'Practicas y Tareas/Diseno de equipos de computo.pdf';">
+      <img src="Practicas y Tareas/Practica3.webp" alt="Imagen 3">
+      <div class="content">
+        <p>Tarea 3</p>
+      </div>
+    </div>
+	
+	<div class="box" onclick="window.location.href = 'Practicas y Tareas/Cotizacion equipos.pdf';">
+      <img src="Practicas y Tareas/Practica4.webp" alt="Imagen 4">
+      <div class="content">
+        <p>Tarea 4</p>
+      </div>
+    </div>
+</div>
+
+<!-- Pie de Página -->
+  <footer>
+    <h6>&copy; <span id="currentYear"></span> Hugo Emilio Espinoza Tun</h6>
+  </footer>
+
+  <script>
+    // Configurar el año actual en el pie de página
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+  </script>
+
+</html>

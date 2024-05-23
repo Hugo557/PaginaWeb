@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Practicas</h1>
+    <div class="buttons">
+        <button onclick="window.location.href = 'Unidad4.html';">Anterior</button>
+        <button onclick="window.location.href = 'index.html';">Menu</button>
+        <button onclick="window.location.href = 'Tareas.html';">Tareas</button>
+      </div>
+  </header>
+<div class="container">
+    <div class="box" onclick="window.location.href = 'Practicas y Tareas/Reporte practica 1.pdf';">
+        <img src= "Practicas y Tareas/Practica1.jpeg" alt="Imagen 1">
+        <div class="content">
+            <p>Practica 1</p>
+        </div>
+    </div>
+     <div class="box" onclick="window.location.href = 'Practicas y Tareas/Reporte practica 2.pdf';">
+      <img src="Practicas y Tareas/Practica2.avif" alt="Imagen 2">
+      <div class="content">
+        <p>Practica 2</p>
+      </div>
+    </div>
+	
+	<div class="box" onclick="window.location.href = 'Practicas y Tareas/Reporte practica 3.pdf';">
+      <img src="Practicas y Tareas/Practica3.webp" alt="Imagen 3">
+      <div class="content">
+        <p>Practica 3</p>
+      </div>
+    </div>
+	
+	<div class="box" onclick="window.location.href = 'Practicas y Tareas/Reporte practica 4.pdf';">
+      <img src="Practicas y Tareas/Practica4.webp" alt="Imagen 4">
+      <div class="content">
+        <p>Practica 4</p>
+      </div>
+    </div>
+
+    <div class="box" onclick="window.location.href = 'Practicas y Tareas/Reporte practica 5.pdf';">
+      <img src="Practicas y Tareas/Practica5.webp" alt="Imagen 5">
+      <div class="content">
+        <p>Practica 5</p>
+      </div>
+  </div>
+</div>
+
+<!-- Pie de Página -->
+  <footer>
+    <h6>&copy; <span id="currentYear"></span> Hugo Emilio Espinoza Tun</h6>
+  </footer>
+
+  <script>
+    // Configurar el año actual en el pie de página
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+  </script>
+
+</html>

@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    background-image: url(Media/Img/Fondo.jpg);
+    
+    background-size: 1120px;
+    background-position: center;
+    margin: 3%;  
+    padding: 20px;
+    text-align: justify;  
+  }
+  
+  footer {
+      color: white; /* Color del texto para el pie de página */
+  }
+  
+  a {
+    color: white;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 9999;
+    background-image: ;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .center {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Añadido para centrar verticalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay espacio suficiente */
+    margin-top: 150px;
+    padding-bottom: 20px;
+  }
+  
+  
+  .info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .box {
+    flex: 1 1 calc(50% - 10px); /* Esto hace que cada caja ocupe el 50% del ancho menos el margen */
+    margin: 10px; /* Agrega un margen entre las cajas */
+  }
+  @media screen and (min-width: 768px) 
+  {
+    .box {
+      flex-basis: calc(33.33% - 10px); /* Cambia el tamaño de las cajas en pantallas más grandes */
+    }
+  }
+   .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .index,
+  .info {
+    background-color: rgba(24, 19, 19, 0.803); 
+     color: #ffffffdd;
+    justify-content: left; 
+  }
+  .buttons {
+    text-align: left;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .right-button {
+    margin-left: auto;
+  }
+  
+  .buttons button:hover {
+    background-color: #10047e;
+  }
+  .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px solid #555;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .box:hover .content {
+    opacity: 1;
+  }
+  
+  .box .content p {
+    margin: 10px;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #890c32;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 25px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background: #d23d6a;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: #d23d6a;
+    transition: all 0.3s;
+}
+
+/* Submenú */
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 200px; /* Cambiado a un valor fijo */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s; /* Cambiado a 0.5s */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font: bold 110% monospace;
+}
+
+.menu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Submenú del submenú */
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+    background: #444444; /* Añadido un fondo diferente para distinguir */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s; /* Cambiado a 0.5s */
+}
+
+.submenu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
